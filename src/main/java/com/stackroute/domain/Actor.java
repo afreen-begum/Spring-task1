@@ -1,28 +1,22 @@
 package com.stackroute.domain;
 
 public class Actor {
-    private String name;
+    private String actorName;
     private String gender;
     private int age;
 
-    public String getName() {
-        return name;
+    public Actor(String actorName, String gender, int age) {
+        this.actorName = actorName;
+        this.gender = gender;
+        this.age = age;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getGender() {
-        return gender;
+    public void setActorName(String actorName) {
+        this.actorName = actorName;
     }
 
     public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     public void setAge(int age) {
@@ -32,7 +26,7 @@ public class Actor {
     @Override
     public String toString() {
         return "Actor{" +
-                "name='" + name + '\'' +
+                "actorName='" + actorName + '\'' +
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
                 '}';
