@@ -1,5 +1,4 @@
 package com.stackroute.domain;
-
 public class Actor {
     private String actorName;
     private String gender;
